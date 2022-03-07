@@ -1,4 +1,4 @@
-## Tarea 1
+## Proyecto Final - React JS
 #### Curso JS Escalab
 ####
 **CookApp:**
