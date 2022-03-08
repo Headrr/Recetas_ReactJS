@@ -1,4 +1,5 @@
 import { useState } from "react";
+import propTypes from "prop-types";
 
 const useModal = () => {
   const [modal, setModal] = useState(false);
@@ -15,3 +16,8 @@ const useModal = () => {
 };
 
 export default useModal;
+
+// DOCUMENTACIÓN PROP-TYPE
+useModal.propTypes = {
+  modal: propTypes.bool,
+};

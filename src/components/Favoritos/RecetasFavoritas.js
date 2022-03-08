@@ -16,6 +16,7 @@ import { Clock, User, Heart } from "react-feather";
 import Flags from "country-flag-icons/react/3x2";
 import propTypes from "prop-types";
 import ModalDelete from "../../components/ModalDeleteLikes";
+import ButtonPrimary from "../Common/ButtonPrimary";
 
 const tipoComida = (tipo) => {
   if (tipo === "China")
@@ -149,6 +150,9 @@ const Track = (props) => {
                   <Heart size={25} color="red" /> Like
                 </Button>
               )}
+            </Col>
+            <Col align="right">
+              <ButtonPrimary type="lyrics" to={`/recetas/id/${id}`} />
             </Col>
           </Row>
         </CardBody>

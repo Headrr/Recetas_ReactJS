@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 import { recipesGet } from "../constants";
+import propTypes from "prop-types";
 
 export const RecetasContext = createContext();
 
@@ -38,3 +39,10 @@ const RecetasContextProvider = ({ children }) => {
 };
 
 export default RecetasContextProvider;
+
+// DOCUMENTACIÓN PROP-TYPE
+RecetasContextProvider.propTypes = {
+  doneFetch: propTypes.bool,
+  recetas: propTypes.array,
+  text: propTypes.string
+};
